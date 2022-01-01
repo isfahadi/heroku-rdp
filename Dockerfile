@@ -44,15 +44,12 @@ RUN apt-get -qqy update \
     && apt update \
     && apt install -qqy --no-install-recommends file-roller \
     && apt update \
-    && apt install -qqy --no-install-recommends unrar \
-    && apt update \
-    && apt install -qqy --no-install-recommends qbittorrent \
-    && apt update \
-    && apt install -qqy --no-install-recommends remmina remmina-plugin-rdp remmina-plugin-secret \
+    && apt install -qqy --no-install-recommends aria2 \
     && apt-add-repository ppa:obsproject/obs-studio \
     && apt update \
     && apt install -qqy --no-install-recommends obs-studio \
     && apt install unzip \
+    && apt install unrar \
     && apt-get autoclean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
