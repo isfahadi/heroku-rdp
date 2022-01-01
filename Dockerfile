@@ -42,6 +42,12 @@ RUN apt-get -qqy update \
     && apt install -qqy --no-install-recommends ./google-chrome-stable_current_amd64.deb \
     && apt-add-repository ppa:remmina-ppa-team/remmina-next \
     && apt update \
+    && apt install -qqy --no-install-recommends file-roller \
+    && apt update \
+    && apt install -qqy --no-install-recommends unrar \
+    && apt update \
+    && apt install -qqy --no-install-recommends qbittorrent \
+    && apt update \
     && apt install -qqy --no-install-recommends remmina remmina-plugin-rdp remmina-plugin-secret \
     && apt-add-repository ppa:obsproject/obs-studio \
     && apt update \
