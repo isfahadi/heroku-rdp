@@ -45,10 +45,8 @@ RUN apt-get -qqy update \
     && apt install -qqy --no-install-recommends file-roller \
     && apt update \
     && apt install -qqy --no-install-recommends aria2 \
-    && apt-add-repository ppa:obsproject/obs-studio \
     && apt update \
-    && apt install -qqy --no-install-recommends obs-studio \
-    && apt install unzip \
+    && apt install -qqy --no-install-recommends rclone -y \
     && apt install unrar \
     && apt-get autoclean \
     && apt-get autoremove \
